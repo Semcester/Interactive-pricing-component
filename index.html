@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Interactive rating component</title>
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <style>
+      /* Add some basic styling to the slider */
+    </style>
+  </head>
+  <body>
+    <main>
+      <section class="top-title">
+        <h3>Simple, traffic-based pricing</h3>
+        <span>Sign-up for our 30-day trial. No credit card required</span>
+      </section>
+      <section class="price-component">
+        <div class="info">
+          <h3>100K PAGEVIEWS</h3>
+          <div class="price">
+            <span id="sliderValue"></span>
+            <span>/month</span>
+          </div>
+        </div>
+        <div class="slider">
+          <input type="range" min="1" max="5" step="1" value="3" id="slider" />
+        </div>
+        <div class="price-options">
+          <span>Montly Billing</span>
+          <div class="check-switch">
+            <input type="checkbox" id="switch" />
+            <label for="switch">Toggle</label>
+          </div>
+          <span>Yearly Billing</span>
+          <div class="tag">25% discount</div>
+        </div>
+        <div class="devider"></div>
+        <div class="actions">
+          <div class="list">
+            <ul>
+              <li>
+                <img src="/assets/images/icon-check.svg" alt="check" />
+                <span>Unlimited websites</span>
+              </li>
+              <li>
+                <img src="/assets/images/icon-check.svg" alt="check" />
+                <span>100% data ownership</span>
+              </li>
+              <li>
+                <img src="/assets/images/icon-check.svg" alt="check" />
+                <span>Email reports</span>
+              </li>
+            </ul>
+          </div>
+          <button>Start my trial</button>
+        </div>
+      </section>
+    </main>
+
+    <script src="main.js"></script>
+  </body>
+</html>
